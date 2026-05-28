@@ -42,8 +42,8 @@
 
 | 端 | 技术栈 | 目录 |
 |------|------|------|
-| **后端** | Java 17 + Spring Boot 3 + Spring AI + MongoDB + MySQL + Redis + ES + RabbitMQ | [bitinn-backend/](./bitinn/) |
-| **前端** | Vue 3 + Vite + Element Plus + Pinia + Vditor | [bitinn-frontend/](./bitinn-vue/) |
+| **后端** | Java 17 + Spring Boot 3 + Spring AI + MongoDB + MySQL + Redis + ES + RabbitMQ | [bitinn-backend/](./bitinn-backend/) |
+| **前端** | Vue 3 + Vite + Element Plus + Pinia + Vditor | [bitinn-frontend/](./bitinn-frontend/) |
 
 ---
 
@@ -160,8 +160,8 @@ yarn dev
 
 | 文档 | 路径 |
 |------|------|
-| 后端 README | [bitinn-backend/README.md](./bitinn/README.md) |
-| 前端 README | [bitinn-frontend/README.md](./bitinn-vue/README.md) |
+| 后端 README | [bitinn-backend/README.md](./bitinn-backend/README.md) |
+| 前端 README | [bitinn-frontend/README.md](./bitinn-frontend/README.md) |
 
 ---
 

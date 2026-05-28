@@ -1,0 +1,158 @@
+# BitInn — AI 驱动的开发者社区
+
+<p align="center">
+  <strong>🚀 在线体验：<a href="https://bitinn-vue.pages.dev">bitinn-vue.pages.dev</a></strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-orange?logo=openjdk" alt="Java 17">
+  <img src="https://img.shields.io/badge/Spring_Boot-3.5.8-brightgreen?logo=springboot" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vuedotjs" alt="Vue">
+  <img src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite" alt="Vite">
+  <img src="https://img.shields.io/badge/Spring_AI-1.1.2-6DB33F?logo=spring" alt="Spring AI">
+  <img src="https://img.shields.io/badge/License-MIT_NC-red" alt="License">
+  <img src="https://img.shields.io/badge/Status-Alpha-orange" alt="Status">
+  <img src="https://img.shields.io/badge/Version-v0.x-inactive" alt="Version">
+</p>
+
+---
+
+## 📖 项目简介
+
+**BitInn**（比特客栈）是一个面向开发者的技术社区平台，集成了 **AI 大模型智能对话**、**文章创作与发布**、**社交互动** 和 **全文搜索** 等核心功能。
+
+项目采用前后端分离架构：
+
+| 端 | 技术栈 | 目录 |
+|------|------|------|
+| **后端** | Java 17 + Spring Boot 3 + Spring AI + MongoDB + MySQL + Redis + ES + RabbitMQ | [bitinn/](./bitinn/) |
+| **前端** | Vue 3 + Vite + Element Plus + Pinia + Vditor | [bitinn-vue/](./bitinn-vue/) |
+
+---
+
+> ⚠️ **版本说明**：项目目前处于 **Alpha 阶段（v0.x）**，核心架构已搭建完成，但部分功能模块和页面仍在开发完善中，后续将持续迭代更新。欢迎关注项目进展！
+
+---
+
+## 🚀 核心亮点
+
+### 🤖 AI 智能对话
+
+4 种对话模式 × 多模型切换 × SSE 流式推送 × 打字效果
+
+| 模式 | 说明 | 模型 |
+|------|------|------|
+| 普通模式 | 技术问答、编程帮助 | Qwen3.6 / Qwen3.7 / DeepSeek-V4 |
+| 专业模式 | ReAct Agent 多步推理 + 工具调用 | DashScope + ReactAgent |
+| 识图模式 | 上传图片让 AI 识别内容 | Qwen3.6-Plus（多模态） |
+| 生图模式 | 文生图、图片编辑 | Qwen-Image-2.0-Pro |
+
+### 📝 文章系统
+
+- Vditor Markdown 编辑器（所见即所得 + 分屏预览）
+- Feed 流（recommend / latest / hot 三种排序 + 无限滚动）
+- 全文搜索（Elasticsearch + IK 中文分词）
+
+### 💬 社交互动
+
+- 点赞 / 收藏 / 关注 / 评论 / 转发 + 消息通知
+- 高并发计数：Redis Hash 异步回写 MySQL
+- 用户个人主页
+
+---
+
+## 🏗️ 技术架构
+
+```
+                    bitinn-vue (Vue 3)
+                    https://bitinn-vue.pages.dev
+                           │
+              Axios HTTP  +  SSE EventSource
+                           │
+┌──────────────────────────┼──────────────────────────────┐
+│            bitinn (Spring Boot 3)                        │
+│                   http://localhost:8000                  │
+│                                                          │
+│   Controller → Service → ModelRouter / ChatAsyncService  │
+│                          │                               │
+│   ┌──────────────────────┼──────────────────────────┐   │
+│   │   MySQL      MongoDB     Redis     ES    OSS     │   │
+│   │   业务数据    AI对话      缓存/计数   搜索   存储   │   │
+│   └──────────────────────────────────────────────────┘   │
+│                          │                               │
+│            RabbitMQ 跨存储异步数据同步                     │
+└──────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 📂 项目结构
+
+```
+bitinn-dev/
+├── bitinn/                    # 后端 Spring Boot 项目
+│   ├── src/main/java/         #   源代码
+│   ├── src/main/resources/    #   配置 / MyBatis XML / 系统提示词
+│   ├── pom.xml                #   Maven 依赖
+│   ├── README.md              #   后端文档
+│   └── LICENSE                #   开源证书
+├── bitinn-vue/                # 前端 Vue 3 项目
+│   ├── src/                   #   源代码
+│   ├── package.json           #   依赖配置
+│   ├── vite.config.js         #   Vite 配置
+│   ├── README.md              #   前端文档
+│   └── LICENSE                #   开源证书
+└── README.md                  # 本文件
+```
+
+---
+
+## ⚡ 快速开始
+
+### 环境要求
+
+| 组件 | 后端 | 前端 |
+|------|------|------|
+| 运行环境 | JDK 17+ / Maven 3.8+ | Node.js 18+ / Yarn 1.22+ |
+| 数据库 | MySQL 8 + MongoDB 7 | — |
+| 中间件 | Redis Stack 7 + ES 8 + RabbitMQ 3 | — |
+| 云服务 | 阿里云 OSS + DashScope + DeepSeek | — |
+
+### 启动后端
+
+```powershell
+cd bitinn
+cp src/main/resources/application-local.yml.example application-local.yml
+# 编辑 application-local.yml 填入本地环境配置
+mvn spring-boot:run -DskipTests
+# 默认端口 8000，Swagger: http://localhost:8000/swagger-ui.html
+```
+
+### 启动前端
+
+```bash
+cd bitinn-vue
+yarn install
+yarn dev
+# 默认端口 5173
+```
+
+---
+
+## 📋 子项目文档
+
+| 文档 | 路径 |
+|------|------|
+| 后端 README | [bitinn/README.md](./bitinn/README.md) |
+| 前端 README | [bitinn-vue/README.md](./bitinn-vue/README.md) |
+
+---
+
+## 📄 License
+
+本项目（bitinn + bitinn-vue）均采用 **MIT-NC License** 进行许可。
+
+- ✅ **个人学习、研究、教育**用途自由使用
+- ✅ **开源社区**贡献和分享
+- ❌ **未经授权的商业用途**禁止
+- 📧 商业授权请联系：aceFelix

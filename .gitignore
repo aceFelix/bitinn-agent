@@ -1,0 +1,30 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.*
+*.local
+
+# Certificates & keys
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.jks
+*.keystore
+*.truststore
+
+# Credentials
+credentials*
+*secret*
+*_secret

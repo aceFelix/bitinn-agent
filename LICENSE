@@ -1,0 +1,50 @@
+MIT-NC License
+
+Copyright (c) 2025 aceFelix
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, and distribute copies of the Software,
+and to permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+NON-COMMERCIAL USE ONLY
+
+This Software may not be used for commercial purposes without explicit prior
+written permission from the copyright holder. "Commercial purposes" means any
+use of the Software that is primarily intended for or directed toward
+commercial advantage or monetary compensation, including but not limited to:
+
+  a) Selling, licensing, or distributing the Software or derivative works for
+     a fee;
+  b) Using the Software as part of a paid service, SaaS platform, or
+     subscription product;
+  c) Using the Software to provide services to third parties for compensation;
+  d) Integrating the Software into a product that is sold or licensed for a fee;
+  e) Using the Software within a for-profit organization to generate revenue
+     directly attributable to the Software's functionality.
+
+The following are NOT considered commercial purposes:
+
+  a) Personal use, study, and research;
+  b) Educational use in academic institutions;
+  c) Non-profit and charitable activities;
+  d) Use within an organization for internal tools that are not directly
+     revenue-generating;
+  e) Open source contributions to this project.
+
+For commercial licensing inquiries, please contact the copyright holder.
+
+DISCLAIMER
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

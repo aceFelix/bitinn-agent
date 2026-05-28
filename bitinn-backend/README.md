@@ -126,7 +126,7 @@ AI 聊天是项目核心亮点，支持 **四种对话模式**（普通对话 / 
 ## 📁 项目结构
 
 ```
-bitinn/
+bitinn-backend/
 ├── src/main/java/com/itniuma/bitinn/
 │   ├── annotation/           # 自定义注解（@State 校验）
 │   ├── config/               # 配置类

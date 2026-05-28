@@ -42,8 +42,8 @@
 
 | 端 | 技术栈 | 目录 |
 |------|------|------|
-| **后端** | Java 17 + Spring Boot 3 + Spring AI + MongoDB + MySQL + Redis + ES + RabbitMQ | [bitinn/](./bitinn/) |
-| **前端** | Vue 3 + Vite + Element Plus + Pinia + Vditor | [bitinn-vue/](./bitinn-vue/) |
+| **后端** | Java 17 + Spring Boot 3 + Spring AI + MongoDB + MySQL + Redis + ES + RabbitMQ | [bitinn-backend/](./bitinn/) |
+| **前端** | Vue 3 + Vite + Element Plus + Pinia + Vditor | [bitinn-frontend/](./bitinn-vue/) |
 
 ---
 
@@ -81,7 +81,7 @@
 ## 🏗️ 技术架构
 
 ```
-                    bitinn-vue (Vue 3)
+                    bitinn-frontend (Vue 3)
                     https://bitinn-vue.pages.dev
                            │
               Axios HTTP  +  SSE EventSource
@@ -106,14 +106,14 @@
 ## 📂 项目结构
 
 ```
-bitinn-dev/
-├── bitinn/                    # 后端 Spring Boot 项目
+bitinn/
+├── bitinn-backend/                    # 后端 Spring Boot 项目
 │   ├── src/main/java/         #   源代码
 │   ├── src/main/resources/    #   配置 / MyBatis XML / 系统提示词
 │   ├── pom.xml                #   Maven 依赖
 │   ├── README.md              #   后端文档
 │   └── LICENSE                #   开源证书
-├── bitinn-vue/                # 前端 Vue 3 项目
+├── bitinn-frontend/                # 前端 Vue 3 项目
 │   ├── src/                   #   源代码
 │   ├── package.json           #   依赖配置
 │   ├── vite.config.js         #   Vite 配置
@@ -138,7 +138,7 @@ bitinn-dev/
 ### 启动后端
 
 ```powershell
-cd bitinn
+cd bitinn-backend
 cp src/main/resources/application-local.yml.example application-local.yml
 # 编辑 application-local.yml 填入本地环境配置
 mvn spring-boot:run -DskipTests
@@ -148,7 +148,7 @@ mvn spring-boot:run -DskipTests
 ### 启动前端
 
 ```bash
-cd bitinn-vue
+cd bitinn-frontend
 yarn install
 yarn dev
 # 默认端口 5173
@@ -160,8 +160,8 @@ yarn dev
 
 | 文档 | 路径 |
 |------|------|
-| 后端 README | [bitinn/README.md](./bitinn/README.md) |
-| 前端 README | [bitinn-vue/README.md](./bitinn-vue/README.md) |
+| 后端 README | [bitinn-backend/README.md](./bitinn/README.md) |
+| 前端 README | [bitinn-frontend/README.md](./bitinn-vue/README.md) |
 
 ---
 

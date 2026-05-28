@@ -5,11 +5,17 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Java-17-orange?logo=openjdk" alt="Java 17">
-  <img src="https://img.shields.io/badge/Spring_Boot-3.5.8-brightgreen?logo=springboot" alt="Spring Boot">
-  <img src="https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vuedotjs" alt="Vue">
-  <img src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite" alt="Vite">
-  <img src="https://img.shields.io/badge/Spring_AI-1.1.2-6DB33F?logo=spring" alt="Spring AI">
+  <a href="https://openjdk.org/projects/jdk/"><img src="https://img.shields.io/badge/Java-17-orange?logo=openjdk" alt="Java 17"></a>
+  <a href="https://spring.io/projects/spring-boot"><img src="https://img.shields.io/badge/Spring_Boot-3.5.8-brightgreen?logo=springboot" alt="Spring Boot"></a>
+  <a href="https://spring.io/projects/spring-ai"><img src="https://img.shields.io/badge/Spring_AI-1.1.2-6DB33F?logo=spring" alt="Spring AI"></a>
+  <a href="https://www.java2ai.com/"><img src="https://img.shields.io/badge/Spring_AI_Alibaba-1.1.2-blue?logo=alibabacloud" alt="Spring AI Alibaba"></a>
+  <a href="https://bailian.console.aliyun.com/cn-beijing/#/home"><img src="https://img.shields.io/badge/DashScope-Qwen-FF6A00?logo=alibabacloud" alt="DashScope"></a>
+  <a href="https://www.deepseek.com/"><img src="https://img.shields.io/badge/DeepSeek-V4-536DFE?logo=deepseek" alt="DeepSeek"></a>
+</p>
+
+<p align="center">
+  <a href="https://vuejs.org/"><img src="https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vuedotjs" alt="Vue"></a>
+  <a href="https://vitejs.cn/vite3-cn/"><img src="https://img.shields.io/badge/Vite-6-646CFF?logo=vite" alt="Vite"></a>
   <img src="https://img.shields.io/badge/License-MIT_NC-red" alt="License">
   <img src="https://img.shields.io/badge/Status-Alpha-orange" alt="Status">
   <img src="https://img.shields.io/badge/Version-v0.x-inactive" alt="Version">
@@ -42,7 +48,7 @@
 
 | 模式 | 说明 | 模型 |
 |------|------|------|
-| 普通模式 | 技术问答、编程帮助 | Qwen3.6 / Qwen3.7 / DeepSeek-V4 |
+| 普通模式 | 技术问答、编程帮助 | Qwen3.6-Plus / Qwen3.7-Max / DeepSeek-V4 |
 | 专业模式 | ReAct Agent 多步推理 + 工具调用 | DashScope + ReactAgent |
 | 识图模式 | 上传图片让 AI 识别内容 | Qwen3.6-Plus（多模态） |
 | 生图模式 | 文生图、图片编辑 | Qwen-Image-2.0-Pro |
@@ -113,9 +119,9 @@ bitinn-dev/
 
 | 组件 | 后端 | 前端 |
 |------|------|------|
-| 运行环境 | JDK 17+ / Maven 3.8+ | Node.js 18+ / Yarn 1.22+ |
-| 数据库 | MySQL 8 + MongoDB 7 | — |
-| 中间件 | Redis Stack 7 + ES 8 + RabbitMQ 3 | — |
+| 运行环境 | JDK 17+ / Maven 3.9+ | Node.js 22+ / Yarn 1.22+ |
+| 数据库 | MySQL 9 + MongoDB 8 | — |
+| 中间件 | Redis Stack 7 + ES 8 + RabbitMQ 4 | — |
 | 云服务 | 阿里云 OSS + DashScope + DeepSeek | — |
 
 ### 启动后端

@@ -12,8 +12,9 @@
 <h1 align="center">BitInn — AI 驱动的开发者社区</h1>
 
 <p align="center">
-  <strong>🚀 在线体验：<a href="https://bitinn-vue.pages.dev">bitinn-vue.pages.dev</a></strong>
+  <strong>🚀 静态体验：<a href="https://bitinn-vue.pages.dev">bitinn-vue.pages.dev</a></strong>
 </p>
+
 
 <p align="center">
   <a href="https://openjdk.org/projects/jdk/"><img src="https://img.shields.io/badge/Java-17-orange?logo=openjdk" alt="Java 17"></a>

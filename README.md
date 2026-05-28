@@ -168,7 +168,7 @@ yarn dev
 
 ## 📄 License
 
-本项目（bitinn + bitinn-vue）均采用 **MIT-NC License** 进行许可。
+本项目（bitinn-backend + bitinn-frontend）均采用 **MIT-NC License** 进行许可。
 
 - ✅ **个人学习、研究、教育**用途自由使用
 - ✅ **开源社区**贡献和分享
